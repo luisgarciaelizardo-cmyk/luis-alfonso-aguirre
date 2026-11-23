@@ -1,0 +1,500 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lic. Luis Alfonso Aguirre | Agente de Seguros en Saltillo</title>
+<meta name="description" content="Lic. Luis Alfonso Aguirre, agente de seguros en Saltillo. Asesoría personalizada en seguros de vida, gastos médicos, retiro, autos, hogar y empresas con las mejores aseguradoras de México.">
+<meta property="og:title" content="Lic. Luis Alfonso Aguirre | Agente de Seguros">
+<meta property="og:description" content="Protege hoy lo que más te importa. Asesoría personalizada con el respaldo de las mejores aseguradoras.">
+<meta property="og:image" content="assets/img/luis-alfonso-aguirre.png">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0b6b6e">
+<link rel="icon" href="assets/img/logo-mas-consciencia.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Inter:wght@400;500;600&family=Lora:ital,wght@1,500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --teal:#0b6b6e;
+    --teal-dark:#074a4c;
+    --teal-soft:#e4f1f0;
+    --ink:#10262d;
+    --text:#33464c;
+    --muted:#667a80;
+    --gold:#f0b429;
+    --cream:#f7f5f0;
+    --white:#ffffff;
+    --line:#dde6e5;
+    --wa:#25d366;
+    --radius:18px;
+    --shadow:0 18px 40px -18px rgba(16,38,45,.35);
+    --max:1160px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:Inter,system-ui,sans-serif;color:var(--text);background:var(--white);line-height:1.65;font-size:17px;-webkit-font-smoothing:antialiased}
+  img,video{max-width:100%;display:block}
+  a{color:inherit;text-decoration:none}
+  h1,h2,h3{font-family:Montserrat,sans-serif;color:var(--ink);line-height:1.15;letter-spacing:-.01em}
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+  section{padding:96px 0}
+  .eyebrow{display:inline-flex;align-items:center;gap:10px;font-family:Montserrat,sans-serif;font-weight:700;font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:var(--teal)}
+  .eyebrow::before{content:"";width:28px;height:3px;border-radius:2px;background:var(--gold)}
+  .section-title{font-size:clamp(1.9rem,3.6vw,2.7rem);margin:14px 0 16px}
+  .lead{font-size:1.08rem;color:var(--muted);max-width:640px}
+
+  /* Buttons */
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-family:Montserrat,sans-serif;font-weight:700;font-size:.98rem;padding:15px 26px;border-radius:999px;transition:transform .2s,box-shadow .2s,background .2s;border:2px solid transparent;cursor:pointer}
+  .btn svg{width:20px;height:20px;flex:none}
+  .btn:hover{transform:translateY(-2px)}
+  .btn-wa{background:var(--wa);color:#fff;box-shadow:0 12px 28px -12px rgba(37,211,102,.7)}
+  .btn-wa:hover{background:#1ebe5a}
+  .btn-primary{background:var(--teal);color:#fff;box-shadow:0 12px 28px -12px rgba(11,107,110,.7)}
+  .btn-primary:hover{background:var(--teal-dark)}
+  .btn-ghost{border-color:var(--teal);color:var(--teal)}
+  .btn-ghost:hover{background:var(--teal);color:#fff}
+  .btn-light{border-color:rgba(255,255,255,.55);color:#fff}
+  .btn-light:hover{background:#fff;color:var(--teal-dark)}
+
+  /* Header */
+  header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:76px;gap:20px}
+  .brand{display:flex;align-items:center;gap:12px}
+  .brand img{width:50px;height:50px;border-radius:12px;border:1px solid var(--line)}
+  .brand strong{display:block;font-family:Montserrat,sans-serif;color:var(--ink);font-size:1rem;line-height:1.2}
+  .brand span{font-size:.8rem;color:var(--muted)}
+  .menu{display:flex;gap:28px;font-weight:500;font-size:.95rem}
+  .menu a{color:var(--text);position:relative}
+  .menu a:hover{color:var(--teal)}
+  .nav .btn{padding:11px 20px;font-size:.9rem}
+
+  /* Hero */
+  .hero{position:relative;overflow:hidden;background:linear-gradient(135deg,var(--cream) 0%,#eef5f4 100%);padding:80px 0 96px}
+  .hero::after{content:"";position:absolute;right:-180px;top:-160px;width:560px;height:560px;border-radius:50%;background:radial-gradient(circle,rgba(11,107,110,.12),transparent 70%)}
+  .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:64px;align-items:center;position:relative;z-index:1}
+  .hero h1{font-size:clamp(2.4rem,5vw,3.8rem);font-weight:800;margin:18px 0 8px}
+  .hero h1 small{display:block;font-size:.42em;font-weight:600;color:var(--teal);letter-spacing:.02em;margin-bottom:6px}
+  .role{font-family:Montserrat,sans-serif;font-size:1.25rem;font-weight:600;color:var(--teal);margin-bottom:22px}
+  .hero p.tag{font-size:1.15rem;max-width:520px;margin-bottom:34px}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:40px}
+  .hero-points{display:flex;flex-wrap:wrap;gap:12px 28px;font-size:.95rem;font-weight:500;color:var(--ink)}
+  .hero-points li{list-style:none;display:flex;align-items:center;gap:8px}
+  .hero-points svg{width:20px;height:20px;color:var(--teal);flex:none}
+  .portrait{position:relative;justify-self:center;width:100%;max-width:420px}
+  .portrait .frame{border-radius:26px;overflow:hidden;box-shadow:var(--shadow);aspect-ratio:4/5;background:#ddd}
+  .portrait .frame img{width:100%;height:100%;object-fit:cover;object-position:60% 20%}
+  .portrait::before{content:"";position:absolute;inset:22px -22px -22px 22px;border:2px solid var(--teal);border-radius:26px;z-index:-1;opacity:.35}
+  .badge{position:absolute;left:-28px;bottom:36px;background:#fff;border-radius:16px;padding:14px 18px;box-shadow:var(--shadow);display:flex;align-items:center;gap:12px}
+  .badge img{width:44px;height:44px;border-radius:10px}
+  .badge strong{display:block;font-family:Montserrat,sans-serif;color:var(--ink);font-size:.95rem;line-height:1.2}
+  .badge span{font-size:.8rem;color:var(--muted)}
+
+  /* Stats */
+  .stats{background:var(--teal);color:#fff;padding:44px 0}
+  .stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;text-align:center}
+  .stats strong{display:block;font-family:Montserrat,sans-serif;font-size:2.2rem;font-weight:800;color:#fff;line-height:1.1}
+  .stats strong em{font-style:normal;color:var(--gold)}
+  .stats span{font-size:.92rem;opacity:.85}
+
+  /* Services */
+  .services-head{display:flex;justify-content:space-between;align-items:flex-end;gap:32px;margin-bottom:48px;flex-wrap:wrap}
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+  .card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:32px 28px;transition:transform .25s,box-shadow .25s,border-color .25s}
+  .card:hover{transform:translateY(-6px);box-shadow:var(--shadow);border-color:transparent}
+  .icon{width:56px;height:56px;border-radius:14px;background:var(--teal-soft);color:var(--teal);display:grid;place-items:center;margin-bottom:20px}
+  .icon svg{width:28px;height:28px}
+  .card h3{font-size:1.2rem;margin-bottom:10px}
+  .card p{font-size:.97rem;color:var(--muted)}
+
+  /* About + video */
+  .about{background:var(--cream);overflow:hidden}
+  .about-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:72px;align-items:center}
+  .video-box{position:relative;max-width:360px;justify-self:center;width:100%}
+  .video-box video{width:100%;border-radius:24px;box-shadow:var(--shadow);aspect-ratio:9/16;object-fit:cover;background:#0b2e33}
+  .video-box::after{content:"";position:absolute;width:120px;height:120px;right:-30px;top:-30px;background:radial-gradient(var(--gold) 2px,transparent 2.5px) 0 0/16px 16px;opacity:.5;z-index:-1}
+  .quote{font-family:Lora,serif;font-style:italic;font-size:1.35rem;color:var(--teal-dark);border-left:4px solid var(--gold);padding:6px 0 6px 20px;margin:26px 0}
+  .values{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:30px 0 34px}
+  .value{display:flex;gap:14px;align-items:flex-start}
+  .value .dot{width:38px;height:38px;border-radius:10px;background:#fff;color:var(--teal);display:grid;place-items:center;flex:none;box-shadow:0 4px 14px -6px rgba(16,38,45,.25)}
+  .value .dot svg{width:20px;height:20px}
+  .value strong{display:block;font-family:Montserrat,sans-serif;color:var(--ink);font-size:.98rem}
+  .value span{font-size:.9rem;color:var(--muted)}
+
+  /* Process */
+  .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:48px;counter-reset:step}
+  .step{position:relative;padding-top:20px}
+  .step::before{counter-increment:step;content:"0" counter(step);font-family:Montserrat,sans-serif;font-weight:800;font-size:2.6rem;color:var(--teal-soft);-webkit-text-stroke:1.5px var(--teal);display:block;margin-bottom:10px;line-height:1}
+  .step h3{font-size:1.08rem;margin-bottom:8px}
+  .step p{font-size:.95rem;color:var(--muted)}
+
+  /* Insurers */
+  .insurers{background:#fff;border-top:1px solid var(--line)}
+  .insurers .center{text-align:center;margin:0 auto 40px}
+  .insurers .center .lead{margin:0 auto}
+  .insurers-img{border-radius:var(--radius);border:1px solid var(--line);overflow:hidden;box-shadow:0 10px 30px -20px rgba(16,38,45,.3);max-width:1100px;margin:0 auto;padding:28px;background:#fff}
+
+  /* Reflections */
+  .reflect{background:linear-gradient(180deg,var(--teal-dark),#0a3d40);color:#fff}
+  .reflect h2{color:#fff}
+  .reflect .eyebrow{color:#9fd6d3}
+  .reflect .lead{color:rgba(255,255,255,.78)}
+  .posts{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin:44px 0 40px}
+  .post{border-radius:16px;overflow:hidden;aspect-ratio:4/5;position:relative;box-shadow:0 18px 40px -20px rgba(0,0,0,.6)}
+  .post img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+  .post:hover img{transform:scale(1.05)}
+  .reflect-head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap}
+
+  /* CTA */
+  .cta{padding:0;margin-top:-1px}
+  .cta-box{background:var(--cream);border-radius:28px;padding:56px;display:grid;grid-template-columns:1.4fr 1fr;gap:40px;align-items:center;transform:translateY(-60px);box-shadow:var(--shadow);border:1px solid var(--line)}
+  .cta-box h2{font-size:clamp(1.7rem,3vw,2.3rem);margin-bottom:12px}
+  .cta-actions{display:flex;flex-direction:column;gap:14px}
+
+  /* Contact */
+  .contact{padding-top:36px}
+  .contact-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:48px;margin-top:40px;align-items:stretch}
+  .contact-list{display:grid;gap:16px}
+  .c-item{display:flex;align-items:center;gap:18px;padding:20px 22px;border:1px solid var(--line);border-radius:16px;transition:border-color .2s,box-shadow .2s,transform .2s;background:#fff}
+  a.c-item:hover{border-color:var(--teal);box-shadow:0 10px 28px -18px rgba(11,107,110,.6);transform:translateY(-2px)}
+  .c-item .icon{margin:0;width:50px;height:50px;flex:none}
+  .c-item .icon svg{width:24px;height:24px}
+  .c-item small{display:block;font-size:.78rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);font-weight:600}
+  .c-item strong{font-family:Montserrat,sans-serif;color:var(--ink);font-size:1.05rem}
+  .c-item.wa .icon{background:#e3f9ec;color:#16a34a}
+  .c-item.ig .icon{background:#fdeaf3;color:#c13584}
+  .map{border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);min-height:380px;display:flex;flex-direction:column;background:#fff}
+  .map iframe{border:0;width:100%;flex:1;min-height:320px}
+  .map-foot{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:16px 20px;flex-wrap:wrap}
+  .map-foot p{font-size:.92rem;color:var(--text)}
+  .map-foot .btn{padding:10px 18px;font-size:.88rem}
+
+  /* Footer */
+  footer{background:var(--ink);color:rgba(255,255,255,.72);padding:48px 0 32px;font-size:.92rem}
+  .foot{display:flex;justify-content:space-between;gap:28px;flex-wrap:wrap;align-items:center}
+  .foot .brand strong{color:#fff}
+  .foot .brand span{color:rgba(255,255,255,.6)}
+  .foot-links{display:flex;gap:22px;flex-wrap:wrap}
+  .foot-links a:hover{color:#fff}
+  .copy{border-top:1px solid rgba(255,255,255,.1);margin-top:28px;padding-top:22px;font-size:.82rem;color:rgba(255,255,255,.5);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+
+  /* Floating WhatsApp */
+  .wa-float{position:fixed;right:22px;bottom:22px;z-index:60;width:62px;height:62px;border-radius:50%;background:var(--wa);color:#fff;display:grid;place-items:center;box-shadow:0 14px 30px -10px rgba(0,0,0,.4);transition:transform .2s}
+  .wa-float:hover{transform:scale(1.08)}
+  .wa-float svg{width:32px;height:32px}
+  .wa-float::before{content:"";position:absolute;inset:0;border-radius:50%;background:var(--wa);animation:pulse 2.4s infinite;z-index:-1}
+  @keyframes pulse{0%{transform:scale(1);opacity:.6}100%{transform:scale(1.7);opacity:0}}
+
+  /* Reveal */
+  .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
+  .reveal.in{opacity:1;transform:none}
+  @media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none}.wa-float::before{animation:none}html{scroll-behavior:auto}}
+
+  /* Responsive */
+  @media (max-width:980px){
+    .menu{display:none}
+    .hero-grid,.about-grid,.contact-grid,.cta-box{grid-template-columns:1fr}
+    .hero-grid{gap:56px}
+    .portrait{max-width:360px}
+    .cards{grid-template-columns:1fr 1fr}
+    .steps{grid-template-columns:1fr 1fr}
+    .posts{grid-template-columns:1fr 1fr}
+    .stats-grid{grid-template-columns:1fr 1fr;row-gap:28px}
+    .about-grid{gap:48px}
+    .cta-box{padding:40px 32px}
+  }
+  @media (max-width:600px){
+    body{font-size:16px}
+    .wrap{padding:0 16px}
+    section{padding:72px 0}
+    .hero{padding:48px 0 72px}
+    .nav{height:68px}
+    .nav .btn span{display:none}
+    .nav .btn{padding:11px 13px}
+    .brand img{width:44px;height:44px}
+    .cards,.steps,.values{grid-template-columns:1fr}
+    .hero-actions .btn{width:100%}
+    .badge{left:8px;bottom:16px;padding:10px 14px}
+    .portrait::before{inset:14px -10px -14px 14px}
+    .cta-box{padding:32px 22px;transform:translateY(-40px)}
+    .c-item strong{font-size:.98rem;word-break:break-word}
+    .wa-float{width:56px;height:56px;right:16px;bottom:16px}
+    .insurers-img{padding:10px}
+  }
+</style>
+</head>
+<body>
+
+<!-- SVG icon sprite -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.08c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.08 1.76-.72 2-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35M12.05 21.5h-.01a9.4 9.4 0 0 1-4.8-1.31l-.34-.2-3.56.93.95-3.47-.22-.36a9.4 9.4 0 0 1-1.44-5.01c0-5.2 4.23-9.43 9.44-9.43 2.52 0 4.89.98 6.67 2.77a9.37 9.37 0 0 1 2.76 6.67c0 5.2-4.24 9.43-9.44 9.43m8.03-17.46A11.3 11.3 0 0 0 12.05.72C5.79.72.7 5.8.7 12.06c0 2 .52 3.95 1.52 5.67L.6 23.6l6.01-1.58a11.3 11.3 0 0 0 5.43 1.38h.01c6.26 0 11.35-5.09 11.35-11.34 0-3.03-1.18-5.88-3.32-8.02"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M22 16.9v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.2 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.1 9.9a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.9z"/></symbol>
+  <symbol id="i-ig" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1" fill="currentColor" stroke="none"/></g></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></g></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m8 12 3 3 5-6"/></g></symbol>
+  <symbol id="i-heart" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21l7.8-7.5 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></symbol>
+  <symbol id="i-med" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="4"/><path d="M12 8v8M8 12h8"/></g></symbol>
+  <symbol id="i-piggy" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h3M21 12V9l-2.5-.5A7 7 0 0 0 13 5H10a7 7 0 0 0-7 7 7 7 0 0 0 3 5.7V21h3v-2h4v2h3v-3.3a7 7 0 0 0 2.7-3.7H21z"/><path d="M10 5V3h3"/><circle cx="16" cy="10.5" r=".6" fill="currentColor"/></g></symbol>
+  <symbol id="i-car" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17H3v-5l2-5h14l2 5v5h-2"/><path d="M3 12h18"/><circle cx="7.5" cy="17" r="2"/><circle cx="16.5" cy="17" r="2"/><path d="M9.5 17h5"/></g></symbol>
+  <symbol id="i-home" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></g></symbol>
+  <symbol id="i-brief" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 13h18"/></g></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></g></symbol>
+  <symbol id="i-user" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></g></symbol>
+  <symbol id="i-scale" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18M7 21h10M5 7h14M5 7l-3 7a3 3 0 0 0 6 0zM19 7l-3 7a3 3 0 0 0 6 0z"/></g></symbol>
+  <symbol id="i-hand" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M11 14h2a2 2 0 0 0 0-4h-3c-.6 0-1.1.2-1.4.6L3 16"/><path d="m7 20 1.6-1.4c.3-.4.8-.6 1.4-.6h4c1.1 0 2.1-.4 2.8-1.2l4.6-4.4a2 2 0 0 0-2.75-2.91l-4.2 3.9"/><path d="m2 15 6 6"/></g></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6"/></symbol>
+</svg>
+
+<header>
+  <div class="wrap nav">
+    <a href="#inicio" class="brand" aria-label="Inicio">
+      <img src="assets/img/logo-mas-consciencia.jpg" alt="Logo Más Consciencia">
+      <div><strong>Luis Alfonso Aguirre</strong><span>Agente de seguros</span></div>
+    </a>
+    <nav class="menu" aria-label="Principal">
+      <a href="#servicios">Servicios</a>
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#aseguradoras">Aseguradoras</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <a class="btn btn-wa js-wa" href="https://wa.me/528444552904?text=Hola%2C%20me%20gustar%C3%ADa%20consultar%20acerca%20de%20los%20servicios%20de%20seguro" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp"><svg><use href="#i-wa"/></svg><span>WhatsApp</span></a>
+  </div>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow">Asesoría en seguros · Saltillo</span>
+        <h1><small>Lic.</small>Luis Alfonso Aguirre</h1>
+        <p class="role">Agente de seguros</p>
+        <p class="tag">Te ayudo a proteger lo que más importa: tu familia, tu salud, tu patrimonio y tu futuro. Asesoría honesta, cercana y a tu medida, con el respaldo de las mejores aseguradoras del país.</p>
+        <div class="hero-actions">
+          <a class="btn btn-wa js-wa" href="https://wa.me/528444552904?text=Hola%2C%20me%20gustar%C3%ADa%20consultar%20acerca%20de%20los%20servicios%20de%20seguro" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Cotiza por WhatsApp</a>
+          <a class="btn btn-ghost" href="tel:+528445064657"><svg><use href="#i-phone"/></svg>Llamar a la oficina</a>
+        </div>
+        <ul class="hero-points">
+          <li><svg><use href="#i-check"/></svg>Asesoría sin costo</li>
+          <li><svg><use href="#i-check"/></svg>Comparo +20 aseguradoras</li>
+          <li><svg><use href="#i-check"/></svg>Acompañamiento en siniestros</li>
+        </ul>
+      </div>
+      <div class="portrait">
+        <div class="frame"><img src="assets/img/luis-alfonso-aguirre.png" alt="Lic. Luis Alfonso Aguirre, agente de seguros" width="460" height="577"></div>
+        <div class="badge">
+          <img src="assets/img/logo-mas-consciencia.jpg" alt="">
+          <div><strong>Más Consciencia</strong><span>Vivir prevenido es vivir ligero</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <div class="stats">
+    <div class="wrap stats-grid">
+      <div><strong>20<em>+</em></strong><span>Aseguradoras aliadas</span></div>
+      <div><strong>24</strong><span>Años de respaldo de Grupo Avance</span></div>
+      <div><strong>1<em>:</em>1</strong><span>Atención personalizada</span></div>
+      <div><strong>360<em>°</em></strong><span>Protección para ti y tu empresa</span></div>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <section id="servicios">
+    <div class="wrap">
+      <div class="services-head reveal">
+        <div>
+          <span class="eyebrow">¿Cómo te puedo ayudar?</span>
+          <h2 class="section-title">Seguros pensados para cada etapa de tu vida</h2>
+          <p class="lead">Analizo tu situación, comparo opciones y te recomiendo solo lo que realmente necesitas. Sin letras chiquitas, sin presiones.</p>
+        </div>
+        <a class="btn btn-primary js-wa" href="https://wa.me/528444552904?text=Hola%2C%20me%20gustar%C3%ADa%20consultar%20acerca%20de%20los%20servicios%20de%20seguro" target="_blank" rel="noopener">Solicitar asesoría <svg><use href="#i-arrow"/></svg></a>
+      </div>
+      <div class="cards">
+        <article class="card reveal"><div class="icon"><svg><use href="#i-heart"/></svg></div><h3>Seguro de vida</h3><p>Garantiza la tranquilidad y estabilidad económica de tu familia, pase lo que pase.</p></article>
+        <article class="card reveal"><div class="icon"><svg><use href="#i-med"/></svg></div><h3>Gastos médicos mayores</h3><p>Acceso a los mejores hospitales y médicos sin poner en riesgo tus ahorros ante un imprevisto.</p></article>
+        <article class="card reveal"><div class="icon"><svg><use href="#i-piggy"/></svg></div><h3>Retiro y ahorro</h3><p>Tu retiro no es problema del futuro, es decisión del presente. Construye hoy el plan para lograr esa meta.</p></article>
+        <article class="card reveal"><div class="icon"><svg><use href="#i-car"/></svg></div><h3>Autos</h3><p>Coberturas amplias para tu auto, con asistencia vial y respaldo inmediato en caso de accidente.</p></article>
+        <article class="card reveal"><div class="icon"><svg><use href="#i-home"/></svg></div><h3>Hogar y patrimonio</h3><p>Protege tu casa y tus bienes contra robos, incendios, daños y fenómenos naturales.</p></article>
+        <article class="card reveal"><div class="icon"><svg><use href="#i-brief"/></svg></div><h3>Empresas y fianzas</h3><p>Soluciones para negocios: daños, responsabilidad civil, flotillas, beneficios para colaboradores y fianzas.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT + VIDEO -->
+  <section class="about" id="sobre-mi">
+    <div class="wrap about-grid">
+      <div class="video-box reveal">
+        <video controls playsinline preload="metadata" poster="assets/video/poster.jpg">
+          <source src="assets/video/video-luis-alfonso.mp4" type="video/mp4">
+          Tu navegador no puede reproducir este video.
+        </video>
+      </div>
+      <div class="reveal">
+        <span class="eyebrow">Sobre mí</span>
+        <h2 class="section-title">Un asesor que te acompaña, no solo que te vende una póliza</h2>
+        <p class="lead">Soy el Lic. Luis Alfonso Aguirre, agente de seguros en <strong>Grupo Avance Seguros y Fianzas</strong>, en Saltillo. Mi trabajo es ayudarte a tomar decisiones conscientes hoy para que tú y los tuyos vivan con tranquilidad mañana.</p>
+        <p class="quote">“Tenemos la experiencia y el respaldo de las mejores aseguradoras. Queremos ser parte de tu historia.”</p>
+        <div class="values">
+          <div class="value"><div class="dot"><svg><use href="#i-user"/></svg></div><div><strong>Atención personal</strong><span>Tratas directamente conmigo, de principio a fin.</span></div></div>
+          <div class="value"><div class="dot"><svg><use href="#i-scale"/></svg></div><div><strong>Asesoría imparcial</strong><span>Comparo entre más de 20 aseguradoras para ti.</span></div></div>
+          <div class="value"><div class="dot"><svg><use href="#i-shield"/></svg></div><div><strong>Respaldo sólido</strong><span>24 años de experiencia de Grupo Avance.</span></div></div>
+          <div class="value"><div class="dot"><svg><use href="#i-hand"/></svg></div><div><strong>Siempre presente</strong><span>Te acompaño en renovaciones y siniestros.</span></div></div>
+        </div>
+        <a class="btn btn-primary js-wa" href="https://wa.me/528444552904?text=Hola%2C%20me%20gustar%C3%ADa%20consultar%20acerca%20de%20los%20servicios%20de%20seguro" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Platiquemos de tu protección</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section>
+    <div class="wrap">
+      <div class="reveal">
+        <span class="eyebrow">Así trabajamos</span>
+        <h2 class="section-title">Protegerte es más sencillo de lo que crees</h2>
+        <p class="lead">Lograr esa meta que cuesta mucho dinero no tiene por qué ser un problema. Teniendo un plan, lo puedes lograr.</p>
+      </div>
+      <div class="steps">
+        <div class="step reveal"><h3>Te escucho</h3><p>Platicamos sobre tu familia, tus metas y lo que quieres proteger.</p></div>
+        <div class="step reveal"><h3>Analizo y comparo</h3><p>Reviso opciones entre las mejores aseguradoras para encontrar la ideal.</p></div>
+        <div class="step reveal"><h3>Te presento tu plan</h3><p>Te explico coberturas y costos con claridad para que decidas con confianza.</p></div>
+        <div class="step reveal"><h3>Te acompaño siempre</h3><p>Seguimiento, renovaciones y apoyo cuando más lo necesites.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INSURERS -->
+  <section class="insurers" id="aseguradoras">
+    <div class="wrap">
+      <div class="center reveal">
+        <span class="eyebrow">Respaldo</span>
+        <h2 class="section-title">Trabajamos con las mejores aseguradoras</h2>
+        <p class="lead">Zurich, GNP, AXA, MetLife, Allianz, Seguros Monterrey New York Life, Chubb, Mapfre, Bupa, Qualitas, HDI y muchas más, para ofrecerte la mejor opción al mejor precio.</p>
+      </div>
+      <div class="insurers-img reveal">
+        <img src="assets/img/aseguradoras-logos.jpg" alt="Aseguradoras: Zurich, Seguros BX+, Primero Seguros, Chubb, Seguros Monterrey New York Life, GNP, Quálitas, AXA, Seguros Atlas, HDI, Insurgentes, Bupa, ANA Seguros, Sura, MetLife, Allianz, Afirme, Mapfre, Momento Seguros y Plan Seguro" loading="lazy" width="1520" height="390">
+      </div>
+    </div>
+  </section>
+
+  <!-- REFLECTIONS (Instagram) -->
+  <section class="reflect">
+    <div class="wrap">
+      <div class="reflect-head reveal">
+        <div>
+          <span class="eyebrow">Más Consciencia</span>
+          <h2 class="section-title">Reflexiones para vivir prevenido</h2>
+          <p class="lead">Lo urgente te distrae, lo importante te construye. Sígueme en Instagram para más contenido sobre protección, ahorro y bienestar financiero.</p>
+        </div>
+        <a class="btn btn-light" href="https://www.instagram.com/masconsciencia_p/" target="_blank" rel="noopener"><svg><use href="#i-ig"/></svg>@masconsciencia_p</a>
+      </div>
+      <div class="posts">
+        <a class="post reveal" href="https://www.instagram.com/masconsciencia_p/" target="_blank" rel="noopener"><img src="assets/img/post-retiro.png" alt="Tu retiro no es problema del futuro. Es decisión del presente." loading="lazy"></a>
+        <a class="post reveal" href="https://www.instagram.com/masconsciencia_p/" target="_blank" rel="noopener"><img src="assets/img/post-urgente.png" alt="Lo urgente te distrae. Lo importante te construye." loading="lazy"></a>
+        <a class="post reveal" href="https://www.instagram.com/masconsciencia_p/" target="_blank" rel="noopener"><img src="assets/img/post-prevenido.png" alt="Vivir prevenido también es vivir ligero." loading="lazy"></a>
+        <a class="post reveal" href="https://www.instagram.com/masconsciencia_p/" target="_blank" rel="noopener"><img src="assets/img/post-futuro.png" alt="Tu yo del futuro sí te está viendo." loading="lazy"></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <div class="wrap">
+      <div class="cta-box reveal">
+        <div>
+          <span class="eyebrow">Tu yo del futuro te lo agradecerá</span>
+          <h2>¡Seguro hay algo bueno para ti!</h2>
+          <p class="lead">Escríbeme y recibe una asesoría personalizada sin compromiso. Juntos encontramos el plan que mejor se adapta a ti.</p>
+        </div>
+        <div class="cta-actions">
+          <a class="btn btn-wa js-wa" href="https://wa.me/528444552904?text=Hola%2C%20me%20gustar%C3%ADa%20consultar%20acerca%20de%20los%20servicios%20de%20seguro" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Enviar WhatsApp</a>
+          <a class="btn btn-ghost" href="tel:+528445064657"><svg><use href="#i-phone"/></svg>844 506 4657</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contacto">
+    <div class="wrap">
+      <div class="reveal">
+        <span class="eyebrow">Contacto</span>
+        <h2 class="section-title">Estoy para servirte</h2>
+        <p class="lead">Visítanos en la oficina o contáctame por el medio que prefieras.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-list reveal">
+          <a class="c-item" href="tel:+528445064657">
+            <div class="icon"><svg><use href="#i-phone"/></svg></div>
+            <div><small>Teléfono de oficina</small><strong>844 506 4657</strong></div>
+          </a>
+          <a class="c-item wa js-wa" href="https://wa.me/528444552904?text=Hola%2C%20me%20gustar%C3%ADa%20consultar%20acerca%20de%20los%20servicios%20de%20seguro" target="_blank" rel="noopener">
+            <div class="icon"><svg><use href="#i-wa"/></svg></div>
+            <div><small>Celular personal y WhatsApp</small><strong>844 455 2904</strong></div>
+          </a>
+          <a class="c-item ig" href="https://www.instagram.com/masconsciencia_p/" target="_blank" rel="noopener">
+            <div class="icon"><svg><use href="#i-ig"/></svg></div>
+            <div><small>Instagram</small><strong>@masconsciencia_p</strong></div>
+          </a>
+          <a class="c-item" href="https://maps.app.goo.gl/AztvRSqXDgRVjuFV6" target="_blank" rel="noopener">
+            <div class="icon"><svg><use href="#i-pin"/></svg></div>
+            <div><small>Oficina · Grupo Avance Seguros y Fianzas</small><strong>Blvd. José María Rodríguez #2710, Col. Las Magnolias, Saltillo, Coah.</strong></div>
+          </a>
+        </div>
+        <div class="map reveal">
+          <iframe title="Ubicación de la oficina" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=Blvd.%20Jos%C3%A9%20Mar%C3%ADa%20Rodr%C3%ADguez%202710%2C%20Las%20Magnolias%2C%20Saltillo%2C%20Coahuila&z=16&output=embed"></iframe>
+          <div class="map-foot">
+            <p><strong>Grupo Avance</strong> · Seguros y Fianzas</p>
+            <a class="btn btn-primary" href="https://maps.app.goo.gl/AztvRSqXDgRVjuFV6" target="_blank" rel="noopener"><svg><use href="#i-pin"/></svg>Cómo llegar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div class="brand">
+        <img src="assets/img/logo-mas-consciencia.jpg" alt="Logo Más Consciencia">
+        <div><strong>Lic. Luis Alfonso Aguirre</strong><span>Agente de seguros</span></div>
+      </div>
+      <div class="foot-links">
+        <a href="#servicios">Servicios</a>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#aseguradoras">Aseguradoras</a>
+        <a href="#contacto">Contacto</a>
+        <a href="https://www.instagram.com/masconsciencia_p/" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+    <div class="copy">
+      <span>© <span id="year">2026</span> Lic. Luis Alfonso Aguirre · Todos los derechos reservados.</span>
+      <span>Oficina: 844 506 4657 · WhatsApp: 844 455 2904</span>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float js-wa" href="https://wa.me/528444552904?text=Hola%2C%20me%20gustar%C3%ADa%20consultar%20acerca%20de%20los%20servicios%20de%20seguro" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp"><svg><use href="#i-wa"/></svg></a>
+
+<script>
+  // WhatsApp con mensaje predefinido
+  var waUrl = 'https://wa.me/528444552904?text=' + encodeURIComponent('Hola, me gustaría consultar acerca de los servicios de seguro');
+  document.querySelectorAll('.js-wa').forEach(function (a) { a.href = waUrl; });
+
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Animación al hacer scroll
+  var items = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { threshold: 0.12 });
+    items.forEach(function (el) { io.observe(el); });
+  } else {
+    items.forEach(function (el) { el.classList.add('in'); });
+  }
+</script>
+</body>
+</html>
